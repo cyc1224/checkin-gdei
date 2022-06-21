@@ -23,7 +23,7 @@
     + 为什么使用Chromium而不是Chrome？
         + Chromium 支持arm架构的系统(基本上是全平台)
 + ChromeDriver(Firefox用geckodriver)
-    + Windows下将下载的可执行文件复制至Chrome的安装目录下(C:\Program Files\Google\Chrome\Application)  
+    + Windows下将下载的可执行文件复制至Chrome的安装目录下`C:\Program Files\Google\Chrome\Application`  
       [下载地址](https://chromedriver.storage.googleapis.com/index.html)
     + Linux(Ubuntu)使用apt-get命令安装  
        `sudo apt-get install -y chromium-driver`
