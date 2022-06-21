@@ -62,5 +62,5 @@ else
         fi
     fi
 fi
-echo "安装成功，请手动执行python ~/checkin@gdei/linux.py"
+echo "安装成功，请手动执行一次python ~/checkin@gdei/linux.py"
 exit
