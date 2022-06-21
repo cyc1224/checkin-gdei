@@ -31,7 +31,7 @@ browser.get("https://tb.gdei.edu.cn/system/yqdc/yjtb")
 time.sleep(1)
 a=int(browser.find_element(By.XPATH ,".//pre").text)
 print(a)
-f = open("id.txt","r")
+f = open("key.txt","r")
 if a==3:
     url='https://sctapi.ftqq.com/'+f.read()+'.send?title='+urllib.parse.quote('健康填报状态:今天打卡成功了')
     browser.get(url)
