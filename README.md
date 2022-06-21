@@ -19,6 +19,7 @@
 # 环境要求
 使用一键脚本的可以基本上不看这个  
 + python(建议3.0以上)
+    + 没有的话自行安装`sudo apt-get install python3.7`
 + Chromium(Firefox有BUG，不推荐使用)
     + 为什么使用Chromium而不是Chrome？
         + Chromium 支持arm架构的系统(基本上是全平台)
