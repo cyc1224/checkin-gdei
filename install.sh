@@ -1,12 +1,14 @@
 !/bin/bash
 echo "GDEI CHECKIN SCRIPT INSTALLER"
+apt-get install -y chromium-browser chromium-driver qrencode
+pip install selenium webdriver-manager
 dir=~/checkin@gdei
 if [ -d $dir ];then
     cd ~/checkin@gdei
 else
-    cd 
+    cd ~/
     mkdir checkin@gdei
-    cd checkin@gdei
+    cd ~/checkin@gdei
 fi
 script='push.py'
 file='key.txt'
@@ -62,5 +64,5 @@ else
         fi
     fi
 fi
-echo "安装成功，请手动执行一次python ~/checkin@gdei/linux.py"
+echo "安装成功，请手动执行程序：python ~/checkin@gdei/linux.py"
 exit
