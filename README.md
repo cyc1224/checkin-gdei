@@ -9,6 +9,9 @@
 请先查看系统要求
 + Linux
 +     wget https://raw.githubusercontent.com/cyc1224/checkin-gdei/main/install.sh && chmod +x install.sh && sudo ./install.sh
++ 卸载脚本过几天上传
++ Windows
+    + 脚本已经完成，暂不上传
 # 系统要求
 + Ubuntu
 + Debian(一键脚本暂不支持，可能过几天支持了(在考试))
