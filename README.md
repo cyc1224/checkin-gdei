@@ -1,7 +1,7 @@
 # checkin-gdei
 未完善，尽量不用使用。明天考完继续弄。  
 带打卡状态微信推送的广东第二师范学院自动打卡脚本。  
-多用户打卡版本预计明天(2022/06/22)上线  
+多用户打卡版本(帮TA打卡功能)预计明天(2022/06/22)上线  
 随机时间打卡功能预计明天(2022/06/22)可用
 # 原理
 通过selenium对浏览器进行直接操作，除了封IP基本是可以持续使用的。
@@ -22,6 +22,7 @@
 + Chromium(Firefox有BUG，不推荐使用)
     + 为什么使用Chromium而不是Chrome？
         + Chromium 支持arm架构的系统(基本上是全平台)
+        + Linux安装：`sudo apt-get install chromium-browser`
 + ChromeDriver(Firefox用geckodriver)
     + Windows下将下载的可执行文件复制至Chrome的安装目录下`C:\Program Files\Google\Chrome\Application`  
       [下载地址](https://chromedriver.storage.googleapis.com/index.html)
@@ -29,10 +30,15 @@
        `sudo apt-get install -y chromium-driver`
 + python包
     +  selenium
+    +  webdriver-manager
 + qrencode  
-    + 用于终端生成二维码，运行一键脚本时通过扫描获得打卡状态微信推送功能(目前不可跳过)
+    + 用于终端生成二维码，运行一键脚本时通过扫描获得打卡状态微信推送功能
         +使用ServerChan服务进行信息推送
-    + 过几天升级使该脚本获得无推送功能
+    + 过几天升级使该脚本获得无推送功能(或者在扫描二维码时出现运行脚本)
+# 其它可能出现的问题
++ 脚本运行过程中退出导致没有设置微信推送
+    + 前往`~/checkin@gdei/`目录删除`key.txt`文件
+    + 预计明天(2022/06/22)解决
 # 安全问题
 + 开发者对你(们)的校园网账号密码不感兴趣，但是所有脚本用到的账号密码及key都是明文保存在你(们)的服务器的`~/checkin@gdei/`目录内，请你(们)注意服务器安全。
 # 免责声明
