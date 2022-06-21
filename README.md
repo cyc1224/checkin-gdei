@@ -1,12 +1,14 @@
 # checkin-gdei
 未完善，尽量不用使用。明天考完继续弄。  
-带打卡状态微信推送的广东第二师范学院自动打卡脚本。
+带打卡状态微信推送的广东第二师范学院自动打卡脚本。  
+多用户打卡版本预计明天(2022/06/22)上线
+随机时间打卡功能预计明天(2022/06/22)可用
 # 原理
 通过selenium对浏览器进行直接操作，除了封IP基本是可以持续使用的。
 # 一键脚本
 请先查看系统要求
 + Linux
-+     wget https://raw.githubusercontent.com/cyc1224/checkin-gdei/main/install.sh && chmod +x install.sh && ./install.sh
++     wget https://raw.githubusercontent.com/cyc1224/checkin-gdei/main/install.sh && chmod +x install.sh && sudo ./install.sh
 # 系统要求
 + Ubuntu
 + Debian(一键脚本暂不支持，可能过几天支持了(在考试))
@@ -28,4 +30,6 @@
 + python包
     +  selenium
 + qrencode  
-    + 用于终端生成二维码，扫描获得打卡状态微信推送
+    + 用于终端生成二维码，运行一键脚本时通过扫描获得打卡状态微信推送功能(目前不可跳过)
+        +使用ServerChan服务进行信息推送
+    + 过几天升级使该脚本获得无推送功能
